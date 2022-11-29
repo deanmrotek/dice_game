@@ -1,3 +1,6 @@
+
+function rolldice() {
+
 var randomNumber1 = Math.floor((Math.random() * 6) + 1);
 var randomNumber2 = Math.floor((Math.random() * 6) + 1);
 
@@ -24,7 +27,10 @@ if (randomNumber2 > randomNumber1) {
     document.querySelector("h1").innerHTML = "Player 2 Wins";
 }
 
-document.querySelector("button").addEventListener("click", function(){
-  location.reload();
+
 }
-)
+
+rolldice();
+
+document.querySelector("button").addEventListener("click", rolldice);
+
