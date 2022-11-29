@@ -23,3 +23,8 @@ if (randomNumber1 === randomNumber2) {
 if (randomNumber2 > randomNumber1) {
     document.querySelector("h1").innerHTML = "Player 2 Wins";
 }
+
+document.querySelector("button").addEventListener("click", function(){
+  location.reload();
+}
+)
